@@ -1,35 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import './App.css';
+import PokemonCard from "./components/PokemonCard/PokemonCard";
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div className="app-container">
+      <PokemonCard name="Bulbasaur" abilities={['Overgrow', 'Chlorophyll']} />
+      <PokemonCard name="Pikachu" abilities={['Static', 'Lightning Rod']} />
+      <PokemonCard name="Charizard" abilities={['Blaze', 'Solar Power']} />
+      <PokemonCard name="Squirtle" abilities={['Torrent', 'Rain Dish']} />
+      <PokemonCard name="Jigglypuff" abilities={['Cute Charm', 'Competitive']} />
+      <PokemonCard name="Caterpie" abilities={['Shield Dust', 'Run Away']} />
+      <PokemonCard name="Weedle" abilities={['Shield Dust', 'Run Away']} />
+      <PokemonCard name="Pidgey" abilities={['Keen Eye or Tangled', 'Big Pecks']} />
+      <PokemonCard name="Rattata" abilities={['Run Away or Guts', 'Thick Fat']} />
+      <PokemonCard name="Oddish" abilities={['Run Away', 'Chlorophyll']} />
+    </div>
+  );
+};
+    
+  
 
 export default App
