@@ -41,7 +41,7 @@ const PokemonList = () => {
         },
         {
             name: 'Oddish',
-            abilities: ['Chlorophyll', 'Run Away'],
+            abilities: ['Run Away', 'Chlorophyll'],
         },
     ];
 
